@@ -91,6 +91,7 @@ class FishRetailer : Retailer<Fish> {
     }
 }
 
+@Test
 fun main(args: Array<String>) {
     val catFuzz = Cat("Fuzz Lightyear")
     val catKatsu = Cat("Katsu")
