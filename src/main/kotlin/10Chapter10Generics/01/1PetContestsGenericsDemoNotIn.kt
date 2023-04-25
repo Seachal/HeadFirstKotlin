@@ -1,7 +1,4 @@
-/* From the "Headfirst Kotlin" book.
- * This code is meant to illustrate the use of generics, and generic types:
- * covariant, contravariant and invariant.
- */
+
 
 // 宠物
 abstract class Pet(var name: String)
