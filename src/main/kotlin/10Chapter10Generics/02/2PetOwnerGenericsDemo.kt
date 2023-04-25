@@ -1,3 +1,5 @@
+package `10Chapter10Generics`.`02`
+
 /* From the "Head first Kotlin" book.
  * This code is meant to illustrate the use of generics.
  */

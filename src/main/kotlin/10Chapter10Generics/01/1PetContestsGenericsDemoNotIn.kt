@@ -1,4 +1,6 @@
+package `10Chapter10Generics`.`01`
 
+import org.junit.Test
 
 // 宠物
 abstract class Pet(var name: String)

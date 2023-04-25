@@ -1,3 +1,5 @@
+package `10Chapter10Generics`.`01notin`
+
 /* From the "Headfirst Kotlin" book.
  * This code is meant to illustrate the use of generics, and generic types:
  * covariant, contravariant and invariant.
