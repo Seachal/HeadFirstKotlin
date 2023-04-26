@@ -1,3 +1,4 @@
+package `08Chapter8NullsAndExceptions`
 /* From the "Head First Kotlin" book.
  * This code is the result of solving an exercise from the book that was meant
  * to illustrate the use of nullable variables, safe calls (?.) and the Elvis

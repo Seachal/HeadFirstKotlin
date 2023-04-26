@@ -1,3 +1,4 @@
+package `12Chapter12BuiltInHigherOrderFunctions2`
 /* From the "Head first Kotlin" book.
  * This code is meant to illustrate the use of the built-in higher order
  * functions of Kotlin: filter, map, forEach.

@@ -1,3 +1,4 @@
+package `09Chapter9Collections`
 /* From the "Head First Kotlin" book.
  * This program prints a glossary of the different kinds of collectios there are
  * in Kotlin.

@@ -1,3 +1,5 @@
+
+package `08Chapter8NullsAndExceptions`
 /* From the "Head First Kotlin" book
  * This program is meant to illustrate the use of nullable variables and the
  * safe calls (?.), elvis operator (?:) and non-null assertions (!!)

@@ -1,3 +1,4 @@
+package `04Chapter4ClassesAndObjects`
 /* From the "Head First Kotlin" book
  * This program is meant to illustrate the use of classes and objects using a
  * class that represents a drum kit that can be played.

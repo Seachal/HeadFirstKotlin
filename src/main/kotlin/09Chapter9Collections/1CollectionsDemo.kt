@@ -1,3 +1,5 @@
+package `09Chapter9Collections`
+
 /* From the "Headfirst Kotlin" book.
  * This code is meant to illustrate the use of collections in Kotlin, like:
  * List, MutableList, Set, MutableSet, Map, MutableMap.

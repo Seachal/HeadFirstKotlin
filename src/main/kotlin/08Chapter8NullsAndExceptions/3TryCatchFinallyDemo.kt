@@ -1,3 +1,4 @@
+package `08Chapter8NullsAndExceptions`
 /* From the "Head First Kotlin" book.
  * This code is the result of a coding exercise meant to illustrate the use of
  * try/catch/finally blocks.

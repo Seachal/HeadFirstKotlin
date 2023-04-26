@@ -1,3 +1,4 @@
+package `02Chapter2BasicTypesAndVariables`
 /* From the Headfirst Kotlin book
  * This program should produce the following output:
  * Fruit = Banana

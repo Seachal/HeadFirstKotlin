@@ -1,3 +1,4 @@
+package `03Chapter3Functions`
 /* From the "Headfirst Kotlin Book"
  * This program is a game of rock, paper, scissors between the user and the
  * computer.

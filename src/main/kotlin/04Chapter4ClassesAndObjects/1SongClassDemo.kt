@@ -1,3 +1,4 @@
+package `04Chapter4ClassesAndObjects`
 /* From the "Headfirst Kotlin" book
  * This code is meant to illustrate the use of classes and objects, with a class
  * called song that can be played or stopped.

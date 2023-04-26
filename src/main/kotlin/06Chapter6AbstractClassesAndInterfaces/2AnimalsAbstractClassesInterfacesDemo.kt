@@ -1,3 +1,4 @@
+package `06Chapter6AbstractClassesAndInterfaces`
 /* From the "Head First Kotlin" book.
  * This program is meant to illustrate the use of inheritance, abstract classes
  * and interfaces.

@@ -1,3 +1,4 @@
+package `06Chapter6AbstractClassesAndInterfaces`
 /* From the "Head First Kotlin" book
  * This code is meant to illustrate the way one can declare an abstract class
  * and use it to create a concrete class

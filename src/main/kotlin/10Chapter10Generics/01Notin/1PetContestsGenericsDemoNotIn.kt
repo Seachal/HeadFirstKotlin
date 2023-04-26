@@ -1,9 +1,4 @@
-package `10Chapter10Generics`.`01notin`
-
-/* From the "Headfirst Kotlin" book.
- * This code is meant to illustrate the use of generics, and generic types:
- * covariant, contravariant and invariant.
- */
+package `10Chapter10Generics`.`01Notin`
 
 // 宠物
 abstract class Pet(var name: String)
@@ -20,7 +15,6 @@ class Vet<T: Pet> {  //  T: Pet 就是为了限制，这是宠物医生，不能
         println("Treat Pet ${t.name}")
     }
 }
-
 
 
 
@@ -77,7 +71,6 @@ class FishRetailer : Retailer<Fish> {
 }
 
 
-
 fun main(args: Array<String>) {
     val catFuzz = Cat("Fuzz Lightyear")
     val catKatsu = Cat("Katsu")
@@ -114,4 +107,30 @@ fun main(args: Array<String>) {
     val catRetailer: Retailer<Cat> = CatRetailer()
     val petRetailer: Retailer<Pet> = CatRetailer()
     petRetailer.sell()
+
+//    ---
+
+}
+
+
+// 这里面有个报错要重点看一下
+fun   fishTest2(){
+    val catFuzz = Cat("Fuzz Lightyear")
+    val catKatsu = Cat("Katsu")
+    val fishFinny = Fish("Finny McGraw")
+
+    val catVet = Vet<Cat>()
+    val fishVet = Vet<Fish>()
+    val petVet = Vet<Pet>()
+
+    catVet.treat(catFuzz)
+    petVet.treat(catKatsu)
+    petVet.treat(fishFinny)
+
+    val petContest = Contest<Fish>(petVet)
+//    这里为什么会报错呢？ 因为期待的是 Fish。
+    petContest.addScore(catFuzz, 50)
+    petContest.addScore(fishFinny, 56)
+    val topPet = petContest.getWinners().first()
+    println("Pet contest winnerr is ${topPet.name}")
 }

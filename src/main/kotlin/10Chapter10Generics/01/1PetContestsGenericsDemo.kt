@@ -1,6 +1,9 @@
 package `10Chapter10Generics`.`01`
 
-import org.junit.Test
+/* From the "Headfirst Kotlin" book.
+ * This code is meant to illustrate the use of generics, and generic types:
+ * covariant, contravariant and invariant.
+ */
 
 // 宠物
 abstract class Pet(var name: String)
@@ -19,30 +22,10 @@ class Vet<T: Pet> {  //  T: Pet 就是为了限制，这是宠物医生，不能
 }
 
 
-//   不使用逆变
-class Contest0<T: Pet>(var vet: Vet<in T>) {
-    //    成绩表
-    val scores: MutableMap<T, Int> = mutableMapOf()
 
-    fun addScore(t: T, score: Int = 0) {
-        if (score >= 0) scores[t] = score
-    }
-
-    //   获胜者
-    fun getWinners(): MutableSet<T> {
-        val winners: MutableSet<T> = mutableSetOf()
-        val highScore = scores.values.maxOrNull<Int>() ?: 0
-
-        for((t, score) in scores) {
-            if (score == highScore) winners.add(t)
-        }
-
-        return winners
-    }
-}
 
 // 比赛，竞赛
-class Contest<T: Pet>(var vet: Vet<in T>) {
+class Contest<T: Pet>(var vet: Vet<T>) {
 //    成绩表
     val scores: MutableMap<T, Int> = mutableMapOf()
 
@@ -93,7 +76,8 @@ class FishRetailer : Retailer<Fish> {
     }
 }
 
-@Test
+
+
 fun main(args: Array<String>) {
     val catFuzz = Cat("Fuzz Lightyear")
     val catKatsu = Cat("Katsu")
@@ -124,6 +108,7 @@ fun main(args: Array<String>) {
     val topPet = petContest.getWinners().first()
     println("Pet contest winnerr is ${topPet.name}")
 
+//     不使用 in，  这里期待 fishVet, 传入 petVet 就不可以 。
     val fishContest = Contest<Fish>(petVet)
 
     val dogRetailer: Retailer<Dog> = DogRetailer()

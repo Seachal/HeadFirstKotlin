@@ -1,3 +1,5 @@
+
+package `02Chapter2BasicTypesAndVariables`
 /*From the "Headfirst Kotlin book
  *This program prints a random slogan built from three different sets of phrases.
  */

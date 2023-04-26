@@ -1,3 +1,4 @@
+package `11Chapter11LambdasAndHigherOrderFunctions`
 /* From the "Head first Kotlin" book.
  * This code is meant to illustrate the use of Lambdas.
  */

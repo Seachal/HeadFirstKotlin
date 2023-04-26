@@ -1,3 +1,5 @@
+package `05Chapter5SubclassesAndSuperclasses`
+
 /* From the "Head First Kotlin" book.
  * This program is meant to illustrate the use of inheritance and polymorphism
  * in Kotlin.

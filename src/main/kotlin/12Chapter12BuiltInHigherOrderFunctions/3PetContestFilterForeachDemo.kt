@@ -1,3 +1,4 @@
+package `12Chapter12BuiltInHigherOrderFunctions`
 /* From the "Head first Kotlin" book.
  * Class meant to illustrate the use of built-in higher order function:
  * filter, forEach

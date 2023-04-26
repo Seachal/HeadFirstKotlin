@@ -1,3 +1,5 @@
+package `11Chapter11LambdasAndHigherOrderFunctions1`
+//  Kotlin 的包名，可以设置一个不存在的包的包名。
 /* From the "Head first Kotlin" book.
  * This code is meant to illustrate the use of Lambdas and higher order
  * functions.

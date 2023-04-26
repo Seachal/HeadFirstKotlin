@@ -1,3 +1,4 @@
+package `07Chapter7DataClasses`
 /* From the "Head First Kotlin" book.
  * This program is meant to illustrate the use of data classes and the operators
  * "==" and "===".
